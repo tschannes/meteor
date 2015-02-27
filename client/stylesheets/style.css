@@ -36,7 +36,7 @@ body {
   position: relative;
   opacity: 1; }
   .post:before, .post:after {
-    content: ;
+    content: "";
     display: table; }
   .post:after {
     clear: both; }
