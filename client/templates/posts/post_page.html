@@ -2,10 +2,17 @@
 	<div class="post-page page">
 		{{> postItem}}
 		<p class="post-page">{{description}}</p>
+		<!-- Comments -->
 		<ul class="comments">
 	      {{#each comments}}
 	        {{> commentItem}}
 	      {{/each}}
 	    </ul>
+	    <!-- Submit Box -->
+	    {{#if currentUser}}
+	      {{> commentSubmit}}
+	    {{else}}
+	      <p>Please log in to leave a comment.</p>
+	    {{/if}}
 	</div>
 </template>
